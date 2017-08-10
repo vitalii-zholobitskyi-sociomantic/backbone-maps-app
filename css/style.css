@@ -1,0 +1,78 @@
+#map-canvas {
+    width: 840px;
+    height: 400px;
+    margin: 10px auto;
+}
+#street-view {
+    margin: 10px auto;
+    width: 840px;
+    height: 400px;
+}
+body {
+    background-color: #F4F3F0;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.content-wrapper {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 0 0.5em;
+}
+.header {
+    text-align: center;
+    color: white;
+    height: 40px;
+    border-bottom: 1px solid #EEE;
+    background-color: #333333;
+    height: 40px;
+    font-size: 24px;
+}
+.header > a {
+    color: white;
+    text-decoration: none;
+}
+
+.control-panel {
+    min-height: 80px;
+    position: relative;
+    padding-top: 20px;
+}
+    .control-panel > div {
+        padding: 10px 0 10px 0;
+    }
+        .control-panel > div > div {
+            display: inline;
+        }
+.input-control > input[type='text'] {
+    border: 3px solid white;
+    -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.5);
+    height: 28px;
+    width: 80px;
+}
+.input-control > input[type='button'] {
+    margin: 0 10px 0 10px;
+    border: 3px solid white;
+    -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.5);
+    height: 28px;
+    cursor: pointer;
+}
+.input-control.invalid-input > input {
+    border: 3px solid red !important;
+    cursor: pointer;
+}
+.input-control.invalid-input:hover:after {
+    content: "Enter valid number!";
+    position: absolute;
+    background-color: red;
+    padding: 3px;
+    color: white;
+    border-radius: 4px;    
+    font-size: 14px;
+}

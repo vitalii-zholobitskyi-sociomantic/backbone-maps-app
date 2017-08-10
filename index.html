@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Google Maps Application</title>
+    <script src="http://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script src="lib/jquery-1.10.2.min.js"></script>
+    <script src="lib/lodash.compat.min.js"></script>
+    <script src="lib/jquery.validate.min.js"></script>
+    <script src="lib/backbone-min.js"></script>
+     <script src="src/constants.js" type="text/javascript"></script>
+
+    <script src="src/app.js" type="text/javascript"></script>
+
+    <script src="src/models/mapData.js" type="text/javascript"></script>
+    <script src="src/views/controlPanel.js" type="text/javascript"></script>
+    <script src="src/views/main.js" type="text/javascript"></script>
+    <script src="src/views/map.js" type="text/javascript"></script>
+    <script src="src/views/streetImages.js" type="text/javascript"></script>
+
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="screen">
+</head>
+
+<body>
+    <div id="contents">
+    </div>
+
+    <script type="text/template" id="app-template">
+        <div class="header"> <a href="/">Google Maps Apllication</a></div>
+
+        <div id="app" class="content-wrapper">
+        </div>
+    </script>
+
+    <script type="text/template" id="map-template">
+        <div id="map-canvas"></div>
+    </script>
+
+     <script type="text/template" id="street-images-template">
+        <div id="street-images-canvas">
+            <div id="street-view"></div>
+        </div>
+    </script>
+
+    <script type="text/template" id="control-panel-template">
+        <div class="control-panel">
+            <span class="title">
+                Enter GPS Coordinates:
+            </span>
+            <div>
+                <div class="input-control">
+                    <input type="text" id="latitude" placeholder="Latitude" value= <%= latitude %> />
+                </div>
+                <div class="input-control">
+                    <input type="text" id="longitude" placeholder="Longitude" value= <%= longitude %> />
+                </div>
+                <div class="input-control">
+                    <input type="button" value="Show Map" id="show-map"></input>
+                </div>
+            </div>
+        </div>
+    </script>
+</body>
+
+</html>

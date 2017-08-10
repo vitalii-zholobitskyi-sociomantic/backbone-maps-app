@@ -1,0 +1,1 @@
+const NUMERIC_REGEXP = /^\d+.?\d*$/;
